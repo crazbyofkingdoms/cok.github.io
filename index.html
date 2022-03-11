@@ -40,7 +40,8 @@
         <div class="shadow-overlay"></div>
         <div class="home-content">
             <div class="row home-content__main">
-                <h3>СЕЗОН 1. ОСТАЛОСЬ 0 ЧАСОВ.</h3>
+                <h3>СЕЗОН 1.</h3>
+                    <h3> ОСТАЛОСЬ <span id="demo"><span></h3>
                 <h1>Добро пожаловать,<br> рыцарь!
                 </h1>
                 <div class="home-content__buttons">
@@ -62,5 +63,24 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+                    <script>
+        
+        var countDownDate = new Date("Apr 5, 2022 15:37:25").getTime();
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("demo").innerHTML = days + " ДНЕЙ " + hours + " ЧАСОВ "
+            + minutes + " МИНУТ " + seconds + " СЕКУНД ";
+ 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+        </script>
 </body>
 </html>
