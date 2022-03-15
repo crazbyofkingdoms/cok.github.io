@@ -1781,6 +1781,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     margin-top: 0;
     margin-bottom: 1.2rem;
     margin-left: 6px;
+	text-align:center;
 }
 
 .home-content h1 {
@@ -1798,7 +1799,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .home-content__buttons {
     padding-top: 0;
-    text-align: left;
+    text-align: center;
 }
 
 .home-content__buttons .btn {
