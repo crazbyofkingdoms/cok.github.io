@@ -1742,8 +1742,8 @@ input::-moz-focus-inner {
 }
 
 .header-logo img {
-  width: 140px;
-  height: 16px;
+  max-width: 80px;
+  height: auto;
 }
 
 /* ------------------------------------------------------------------- 
@@ -1945,8 +1945,8 @@ input::-moz-focus-inner {
 
 @media only screen and (max-width:1200px) {
   .header-logo img {
-    width: 135px;
-    height: 15px;
+  max-width: 80px;
+  height: auto;
   }
 
   .header-nav-wrap .header-main-nav {
@@ -1985,8 +1985,8 @@ input::-moz-focus-inner {
   }
 
   .header-logo img {
-    width: 130px;
-    height: 15px;
+  max-width: 80px;
+  height: auto;
   }
 
   .header-nav-wrap {
@@ -2045,8 +2045,8 @@ input::-moz-focus-inner {
   }
 
   .header-logo img {
-    width: 125px;
-    height: 14px;
+  max-width: 80px;
+  height: auto;
   }
 
   .header-nav-wrap {
